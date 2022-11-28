@@ -1,16 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #dae7f5;
+    background-image: linear-gradient(62deg, #89bcf1 0%, #eee6f7 100%);
+    
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+h2,h1,span{
+  font-family: 'Noto Serif JP', serif;
+}
+li,p{
+  font-family: 'EB Garamond', serif;
 
+}
 * {
   box-sizing: border-box;
 }
@@ -24,3 +39,73 @@ a {
     background: black;
   }
 }
+.navbg{
+  background-color: #1ca2eb;
+  background-image: linear-gradient(160deg, #1581c0 0%, #3436ca 100%);
+  
+} 
+
+@media (max-width: 900px ) {
+  .navbg,.herobg,.contactbg,.fotterbg,.smallbg,.faqbg,.aboutbg,.sectionbg,.appointmantbg{
+   width: 110%;
+  }
+}
+#__next{
+  width: 100%;
+ }
+
+@media (max-width: 900px ) {
+  #__next{
+   width: 91%;
+  }
+}
+@media (max-width: 900px ) {
+  .feedbg{
+width: 110%;
+margin: auto;
+display: flex;
+  }
+}
+@media (max-width: 390px ) {
+  .navbg{
+   width: 120%;
+  }
+}
+
+.Filmotrend{
+  font-size: 32px;
+  
+  
+  color: #eddeee;
+  background-image: -webkit-linear-gradient(0deg, #f1d0f3 21%, #fcd6e2 66%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  
+}
+.herobg{
+
+
+  background-image: url("../assests/marcelo-leal-k7ll1hpdhFA-unsplash.jpg");
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+  }
+  .smallbg{
+    /* background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%); */ 
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  
+  
+  }
+
+  .fotterbg{
+    background-color: #1ca2eb;
+  background-image: linear-gradient(160deg, #1581c0 0%, #3436ca 100%);
+  
+  
+  }
